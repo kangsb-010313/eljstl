@@ -23,8 +23,6 @@ public class Servlet03Controller extends HttpServlet {
 		 
 		 */
 		
-		
-		
 		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/03.jsp");
 		rd.forward(request, response);
 
