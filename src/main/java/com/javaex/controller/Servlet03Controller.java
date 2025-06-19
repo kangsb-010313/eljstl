@@ -15,9 +15,11 @@ public class Servlet03Controller extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		System.out.println("/03");
+		
 		/* 
 		 request 영역의 변수의 값 꺼내쓰는 테스트
-		 localhost:8000/eljstl/03?id=you&pw=1111&name=재석&num1=100&num2=200
+		 localhost:8080/eljstl/03?id=you&pw=1111&name=재석&num1=100&num2=200
 		 
 		 */
 		

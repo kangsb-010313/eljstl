@@ -15,6 +15,8 @@ public class Servlet01Controller extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		System.out.println("/01");
+		
 		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/01.jsp");
 		rd.forward(request, response);
 
