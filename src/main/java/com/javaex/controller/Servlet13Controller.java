@@ -19,6 +19,8 @@ public class Servlet13Controller extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		System.out.println("/13");
+		
 		List<UserVo> userList = new ArrayList<UserVo>();
 		for(int i=0 ; i<20 ; i++) {
 			UserVo vo = new UserVo(i, i+"번 회원", i+"@gamil.com", "1234", "male");

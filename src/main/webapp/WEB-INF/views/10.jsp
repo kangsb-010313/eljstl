@@ -24,10 +24,12 @@
 		<% if("1".equals(no)){ %>
 				<span style="color: red">빨강</span> 
 				
-		<% }else if("2".equals(no)){ %>
+		<% }
+			if("2".equals(no)){ %>
 				<span style="color: green">초록</span>
 				
-		<% }else if("3".equals(no)){ %>
+		<% }
+			if("3".equals(no)){ %>
 				<span style="color: blue">파랑</span> 
 				
 		<% }else { %>
@@ -39,6 +41,7 @@
 		<br>
 		---------------------------------------------------
 		<h3>jstl(if)</h3>
+		<!-- else가 없음 -->
 		
 		<c:if test="${param.color == 1 }">
 			<span style="color: red">빨강</span> 
@@ -52,6 +55,20 @@
 			<span style="color: blue">파랑</span>
 		</c:if>
 	
+	
+		<!-- 
+		if(1이면){
+			<span style="color: red">빨강</span>
+		}
+		
+		if(2이면){
+			<span style="color: green">초록</span>
+		}
+		
+		if(3이면){
+			<span style="color: blue">파랑</span>
+		}
+		-->
 		
 	</body>
 </html>
